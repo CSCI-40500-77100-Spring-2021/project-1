@@ -1,4 +1,4 @@
-import { addNewUser, getUsers, getUserWithID } from '../controllers/userControllers'; // import all controllers
+import { addNewUser, getUsers, getUserWithID, updateUser, deleteUser } from '../controllers/userControllers'; // import all controllers
 
 const routes = (app) => {
 	app.route('/users')
@@ -8,7 +8,12 @@ const routes = (app) => {
 		.post(addNewUser); // executing addnewUser in Users folder
 
 	app.route('/users/:UserId')
+	// GET specific player
 		.get(getUserWithID)
+	// UPDATE specific player
+		.put(updateUser)
+	// DELETE specific player
+		.delete(deleteUser);
 }
 
 export default routes;

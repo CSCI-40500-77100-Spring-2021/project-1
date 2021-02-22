@@ -28,7 +28,6 @@ export const getUsers = (req, res) => {
 };
 
 export const getUserWithID = (req, res) => {
-
     User.findById(req.params.UserId,(err, User) => {
         if (err) {
             res.send(err);
@@ -36,3 +35,26 @@ export const getUserWithID = (req, res) => {
         res.json(User);
     });
 };
+
+export const updateUser = (req, res) => {
+    User.findOneAndUpdate({ _id: req.params.UserId }, req.body, {new: true}, (err, User) => { 
+    // _id: req.params.UserId - Find ID we want to update
+    // req.body - then pass data we have in our body
+    // findOneAndUpdate - updates data in DB 
+    // {new:: true} - returns the updated user
+        if (err) {
+            res.send(err);
+        }
+        res.json(User);
+    });
+};
+
+export const deleteUser = (req, res) => {
+    User.remove({ _id: req.params.UserId },(err, User) => {
+        if (err) {
+            res.send(err);
+        }
+        res.json({ message: 'Successfully deleted the User'});
+    });
+};
+
