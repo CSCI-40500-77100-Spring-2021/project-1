@@ -91,6 +91,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SwipeViewController") as? SwipeViewController else {
+            return
+        }
+        vc.passedSection = categoryFood[indexPath.row]
+        AudioServicesPlaySystemSound(1519)
+        present(vc, animated: true)
+    }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
