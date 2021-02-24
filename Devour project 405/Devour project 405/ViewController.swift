@@ -55,7 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 500
     }
     
     // TableView
@@ -66,7 +66,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MainTableViewCell
         cell.foodImage.image = UIImage(named: categoryFood[indexPath.row])
-        cell.foodImage.layer.cornerRadius = 30
+        cell.frameView.layer.cornerRadius = 30
+        cell.frameView.clipsToBounds = true
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        cell.foodInfoView.addSubview(blurEffectView)
+        cell.foodInfoView.sendSubviewToBack(blurEffectView)
+        cell.foodLabel.text = categoryFood[indexPath.row].uppercased()
+       
+        
+        
         return cell
     }
     

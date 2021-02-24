@@ -9,7 +9,10 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var frameView: UIView!
     @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var foodInfoView: UIView!
+    @IBOutlet weak var foodLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
