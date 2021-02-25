@@ -12,6 +12,15 @@ too high. Instead we will focus on charging a commision service from the deliver
 new customers. OUR PRODUCT provides a social twist and exciting twist
 on dining with friends.
 
+## Development
+
+To develop Firebase software in this repository, ensure that you have at least
+the following software:
+
+  * Xcode 12.0 (or later)
+  * CocoaPods 1.10.0 (or later)
+ 
+ 
 ## Dependancy Manager
 Cocoa Pods - Installing and updating CocoaPods is very easy. View the [Installation
 guide](https://guides.cocoapods.org/using/getting-started.html#installation) and the
@@ -24,8 +33,9 @@ pod install
 Running the command above will download all of the projects dependencies and create a workspace.
 
 ## Group Members 
-Rumman Al Karim
-Dowon Lee 
-John Solano
-William Ullauri
-Ivan Yatsko
+- Rumman Al 
+- KarimDowon Lee
+- John Solano
+- William Ullauri
+- Ivan Yatsko
+
