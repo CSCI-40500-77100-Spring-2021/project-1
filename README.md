@@ -1,4 +1,4 @@
-# project-1 - Devour
+# Devour - project-1
 
 ## Product Vision
 FOR groups of friends or Office teams WHO want to plan a lunch event.(THE)
@@ -31,6 +31,9 @@ pod install
 ```
 
 Running the command above will download all of the projects dependencies and create a workspace.
+
+## Mock Up Ideas
+![DevourMockUp](https://github.com/CSCI-40500-77100-Spring-2021/project-1/blob/master/ReadMe%20Assets/Devour.jpg)
 
 ## Group Members 
 - Rumman Al 
