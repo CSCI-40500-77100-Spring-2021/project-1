@@ -24,9 +24,9 @@ pod install
 Running the command above will download all of the projects dependencies and create a workspace.
 
 ## Group Members 
-Markup : * Rumman Al 
-         * KarimDowon Lee
-         * John Solano
-         * William Ullauri
-         * Ivan Yatsko
+- Rumman Al 
+- KarimDowon Lee
+- John Solano
+- William Ullauri
+- Ivan Yatsko
 
