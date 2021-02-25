@@ -1,1 +1,0 @@
-start the program in the CMD by going into the backend folder and running 'npm start'
