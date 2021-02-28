@@ -48,6 +48,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    // This handles the change in View Controllers and its animation
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
+        
+        // change the root view controller to your specific view controller
+        window.rootViewController = vc
+        
+        // add animation
+        UIView.transition(with: window, duration: 1,
+                          options: .transitionFlipFromLeft,
+                            //options: .transitionCrossDissolve,
+                          //options: .transitionCurlUp,
+                          animations: nil, completion: nil)
+    }
+    
 }
 

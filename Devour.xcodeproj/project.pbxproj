@@ -13,7 +13,12 @@
 		6FBEB5B825DF3A4E00B1B9BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBEB5B625DF3A4E00B1B9BA /* Main.storyboard */; };
 		6FBEB5BA25DF3A5600B1B9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FBEB5B925DF3A5600B1B9BA /* Assets.xcassets */; };
 		6FBEB5BD25DF3A5600B1B9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBEB5BB25DF3A5600B1B9BA /* LaunchScreen.storyboard */; };
-		6FBEB5C525DF3AB500B1B9BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FBEB5C425DF3AB500B1B9BA /* GoogleService-Info.plist */; };
+		6FBEB5CF25EAEDB200B1B9BA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEB5CE25EAEDB200B1B9BA /* LoginVC.swift */; };
+		6FBEB5D125EAF01100B1B9BA /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEB5D025EAF01100B1B9BA /* LoginNavController.swift */; };
+		6FBEB5D325EB1AE100B1B9BA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEB5D225EB1AE100B1B9BA /* MainTabBarController.swift */; };
+		6FBEB5D525EB1F8B00B1B9BA /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEB5D425EB1F8B00B1B9BA /* RegisterVC.swift */; };
+		6FBEB5D725EB26BF00B1B9BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FBEB5D625EB26BE00B1B9BA /* GoogleService-Info.plist */; };
+		6FD8A2D925EBF8FE00D37B66 /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD8A2D825EBF8FE00D37B66 /* GlobalFuncs.swift */; };
 		7649E46D527EB869CB2BE19F /* Pods_Devour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4348868B66B14628A4B45DE /* Pods_Devour.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +31,12 @@
 		6FBEB5B925DF3A5600B1B9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FBEB5BC25DF3A5600B1B9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FBEB5BE25DF3A5600B1B9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FBEB5C425DF3AB500B1B9BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FBEB5CE25EAEDB200B1B9BA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6FBEB5D025EAF01100B1B9BA /* LoginNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavController.swift; sourceTree = "<group>"; };
+		6FBEB5D225EB1AE100B1B9BA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6FBEB5D425EB1F8B00B1B9BA /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		6FBEB5D625EB26BE00B1B9BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6FD8A2D825EBF8FE00D37B66 /* GlobalFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
 		863A375D30E80F932AB07480 /* Pods-Devour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devour.release.xcconfig"; path = "Target Support Files/Pods-Devour/Pods-Devour.release.xcconfig"; sourceTree = "<group>"; };
 		D4348868B66B14628A4B45DE /* Pods_Devour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC58432DD3FE6BA69A6ECE39 /* Pods-Devour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devour.debug.xcconfig"; path = "Target Support Files/Pods-Devour/Pods-Devour.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +84,7 @@
 		6FBEB5AD25DF3A4E00B1B9BA /* Devour */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEB5D625EB26BE00B1B9BA /* GoogleService-Info.plist */,
 				6FBEB5C725E73F2F00B1B9BA /* Tab Bar Controller */,
 				6FBEB5C625E73F2200B1B9BA /* LoginNavigation */,
 				6FBEB5AE25DF3A4E00B1B9BA /* AppDelegate.swift */,
@@ -83,7 +94,7 @@
 				6FBEB5B925DF3A5600B1B9BA /* Assets.xcassets */,
 				6FBEB5BB25DF3A5600B1B9BA /* LaunchScreen.storyboard */,
 				6FBEB5BE25DF3A5600B1B9BA /* Info.plist */,
-				6FBEB5C425DF3AB500B1B9BA /* GoogleService-Info.plist */,
+				6FD8A2D825EBF8FE00D37B66 /* GlobalFuncs.swift */,
 			);
 			path = Devour;
 			sourceTree = "<group>";
@@ -91,6 +102,9 @@
 		6FBEB5C625E73F2200B1B9BA /* LoginNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEB5D025EAF01100B1B9BA /* LoginNavController.swift */,
+				6FBEB5CE25EAEDB200B1B9BA /* LoginVC.swift */,
+				6FBEB5D425EB1F8B00B1B9BA /* RegisterVC.swift */,
 			);
 			path = LoginNavigation;
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 		6FBEB5C725E73F2F00B1B9BA /* Tab Bar Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEB5D225EB1AE100B1B9BA /* MainTabBarController.swift */,
 			);
 			path = "Tab Bar Controller";
 			sourceTree = "<group>";
@@ -171,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FBEB5BD25DF3A5600B1B9BA /* LaunchScreen.storyboard in Resources */,
-				6FBEB5C525DF3AB500B1B9BA /* GoogleService-Info.plist in Resources */,
+				6FBEB5D725EB26BF00B1B9BA /* GoogleService-Info.plist in Resources */,
 				6FBEB5BA25DF3A5600B1B9BA /* Assets.xcassets in Resources */,
 				6FBEB5B825DF3A4E00B1B9BA /* Main.storyboard in Resources */,
 			);
@@ -227,8 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FBEB5B525DF3A4E00B1B9BA /* SecondViewController.swift in Sources */,
+				6FBEB5D125EAF01100B1B9BA /* LoginNavController.swift in Sources */,
 				6FBEB5AF25DF3A4E00B1B9BA /* AppDelegate.swift in Sources */,
+				6FBEB5D325EB1AE100B1B9BA /* MainTabBarController.swift in Sources */,
+				6FD8A2D925EBF8FE00D37B66 /* GlobalFuncs.swift in Sources */,
+				6FBEB5D525EB1F8B00B1B9BA /* RegisterVC.swift in Sources */,
 				6FBEB5B125DF3A4E00B1B9BA /* SceneDelegate.swift in Sources */,
+				6FBEB5CF25EAEDB200B1B9BA /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
