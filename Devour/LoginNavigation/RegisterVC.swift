@@ -28,6 +28,7 @@ class RegisterVC: UIViewController {
         super.viewDidLoad()
 
         errorLabel.alpha = 0
+        
     }
     
     // Missing checking if pass and confirm pass are the same
@@ -48,7 +49,8 @@ class RegisterVC: UIViewController {
                 ref.child("users").child(userID).setValue([
                     "firstName" : cleanedFirstName,
                     "lastName" : cleanedLastName,
-                    "email" : cleanedEmail
+                    "email" : cleanedEmail,
+                    "TableCode" : "-----"
                     ])
                 
                 goToMainTabBarController()

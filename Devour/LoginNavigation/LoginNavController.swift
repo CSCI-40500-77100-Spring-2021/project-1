@@ -18,6 +18,12 @@ class LoginNavController: UINavigationController {
         super.viewDidLoad()
         // edited this function to make nav bar transparent
         applyTransparentBackgroundToTheNavigationBar(0.0)
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = UIColor(red: 255/255, green: 37/255, blue: 37/255, alpha: 1)
+        navigationBarAppearace.barTintColor = UIColor.black
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.yellow]
     }
     
     /// Configures the navigation bar to use a transparent background (see-through but without any blur).
