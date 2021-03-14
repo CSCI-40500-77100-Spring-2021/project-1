@@ -1,6 +1,0 @@
-framework module Pods_Devour {
-  umbrella header "Pods-Devour-umbrella.h"
-
-  export *
-  module * { export * }
-}
