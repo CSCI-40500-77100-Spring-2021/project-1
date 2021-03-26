@@ -12,14 +12,19 @@ too high. Instead we will focus on charging a commision service from the deliver
 new customers. OUR PRODUCT provides a social twist and exciting twist
 on dining with friends.
 
-## Development
- 
- 
+## Software Priorities/Important Qualities
+
+#### Software Compatibility 
+Our app will prioritize Software Compatibility. This is because we want users to seamlessly interact with each other no matter which OS they are using. For vendors to utilize our user base our software will also need to be compatible with third party ordering and reservation apps. 
+
+#### Security (Nonfunctional Product Characteristic)
+Unlike zoom where anyone can enter any meeting our application will prioritize **security**. Our app has a table feature, similar to a lobby where friends can meet up before they decide on a restaurant to go out to. We want this feature to be secure, we don't want users to be able to view group chats or be apart of tables they didn't get invited to. 
+
+#### Software Reuse
+We are also prioritizing using APIs. Yes this means our software may be slower due to our app communicating with other API's however it will increase the production time and maintainability of our app because we do not mind creating functions around these APIs. 
+
 ## Dependancy Manager
 start the program in the CMD by going into the backend folder and running 'npm start'
-
-## Mock Up Ideas
-![DevourMockUp](https://github.com/CSCI-40500-77100-Spring-2021/project-1/blob/master/ReadMe%20Assets/Devour.jpg)
 
 ## Group Members 
 - Rumman Al 
