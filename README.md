@@ -23,6 +23,9 @@ Unlike zoom where anyone can enter any meeting our application will prioritize *
 #### Software Reuse
 We are also prioritizing using APIs. Yes this means our software may be slower due to our app communicating with other API's however it will increase the production time and maintainability of our app because we do not mind creating functions around these APIs. 
 
+
+![LayeredArchitecture](./READMEassets/LayeredArch.png)
+
 ## Dependancy Manager
 start the program in the CMD by going into the backend folder and running 'npm start'
 
