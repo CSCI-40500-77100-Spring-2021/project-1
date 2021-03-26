@@ -26,8 +26,19 @@ We are also prioritizing using APIs. Yes this means our software may be slower d
 
 ![LayeredArchitecture](./READMEassets/LayeredArch.png)
 
+## Technologies
+- Database - MongoDB (NoSQL)
+- Platform - It will be presented as a web platform.
+- Server - Our application will communicate with a cloud server
+- Open Source - Yelp API, we are limited to 5,000 API calls per 24 hours.
+- Development Tools - MERN stack, due to our team's previous experiences 
+
+
 ## Dependancy Manager
-start the program in the CMD by going into the backend folder and running 'npm start'
+start the program in the CMD by going into the backend folder and running:
+```bash
+'npm start'
+```
 
 ## Group Members 
 - Rumman Al 
