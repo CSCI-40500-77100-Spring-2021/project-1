@@ -46,3 +46,16 @@ start the program in the CMD by going into the backend folder and running:
 - John Solano
 - William Ullauri
 - Ivan Yatsko
+
+# Docker
+cd into frontend2 and run
+
+```
+docker pull davidullauri/devour
+```
+
+cd into backend and run
+
+```
+docker pull davidullauri/devour-backend
+```
