@@ -2,17 +2,32 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyparser from 'body-parser';
 import cors from 'cors';
-import routes from './routes/devourRoutes'
+import routes from './routes/devourRoutes';
+
 
 const app = express();
 const PORT = 4000;
 
+
+// MongoDB Driver Code
+const MongoClient = require('mongodb').MongoClient;
+const uri = 'mongodb+srv://John:john123@devour.lqgmu.mongodb.net/Devour?retryWrites=true&w=majority';
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("Devour").collection("users");
+  // perform actions on the collection object
+  console.log("Connected to MongoCloud");
+  client.close();
+});
+
+
 // Mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/devourDB', { // enter URL here for cloud db
+mongoose.connect(uri, { // enter URL here for cloud db
 	useNewUrlParser: true, 
 	useUnifiedTopology: true
 }); 
+
 
 // body parser setup
 app.use(bodyparser.urlencoded({ extended: true }));
