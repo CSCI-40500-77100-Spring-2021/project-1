@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema; // holds schema from mongoose
 
-export const UserSchema = new Schema({ // values for DB
+const UserSchema = new Schema({ // values for DB
 	firstName:{
 		type: String, // String, Array, boolean, number etc
 		required: true
@@ -12,6 +12,10 @@ export const UserSchema = new Schema({ // values for DB
 		required: true
 	},
 	email:{
+		type: String,
+		required: true
+	},
+	password:{
 		type: String,
 		required: true
 	},
@@ -26,11 +30,8 @@ export const UserSchema = new Schema({ // values for DB
 		type: Date,
 		default: Date.now
 	}
-/* We can add other columns to the db here
-	,
-	restName:{
-		type: String
-	}
-*/
 });
 
+const User = mongoose.model("users", UserSchema);
+
+module.exports = User;
