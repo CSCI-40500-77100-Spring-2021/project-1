@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
-import { UserSchema } from '../models/userModel';
+//import { UserSchema } from '../models/userModel';
+const User = require('../models/userModel');
 
-const User = mongoose.model('User', UserSchema);
+//const User = mongoose.model('User', UserSchema);
 
 // controllers are functions that interact with DB when we make a request to the API
 // controller executes function in DB 
